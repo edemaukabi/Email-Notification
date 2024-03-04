@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payzeep Welcome</title>
+    <style>
+        body {
+            background-color: #F2F3FD;
+        }
+        .welcome-container {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            margin-top: 15px;
+            width: 30vw;
+            border-radius: 15px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .login-btn {
+            background-color: #2C3ADF;
+            color: #fff;
+            font-weight: 600;
+            padding: 15px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 20px;
+            margin-bottom: 25px;
+        }
+        .login-btn:hover {
+            background-color: #1a238b;
+        }
+        .welcome-heading {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+        .welcome-heading span {
+            font-weight: 600;
+            color: #2C3ADF;
+        }
+        .welcome-image {
+            max-width: 200px;
+            margin-bottom: 25px;
+        }
+        .welcome-salutation {
+            margin-bottom: 25px;
+        }
+        .welcome-message {
+            margin-bottom: 25px;
+        }
+        .welcome-footer {
+            background-color: #F7F7F7;
+            padding: 15px;
+            margin-right: 10px;
+            margin-left: 10px;
+            @media screen and (min-width: 992px) {
+                margin-right: 35px;
+                margin-left: 35px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+
+    <h3 class="welcome-heading">Welcome to <br><span>Zeepway</span></h3>
+    <img src="../assets/welcome-image.png" alt="welcome" class="welcome-image"/>
+    <p class="welcome-salutation">Dear <strong>firstName,</strong></p>
+    <p class="welcome-message">Welcome to ZeepWay! We are thrilled to have you on board 
+        and are excited to embark on a financial journey together.
+        Your financial well-being is our priority, and we're here to 
+        provide you with a range of services to help you achieve 
+        your financial goals.
+    </p>
+    <button class="login-btn">Login to Dashboard</button>
+    <footer class="welcome-footer">
+        If this email you received, 
+        is not as a result of your recent action on Zeepjet Dashboard, 
+        please contact PayZeep team urgently, Thanks.
+    </footer>
+</div>
+</body>
+</html>

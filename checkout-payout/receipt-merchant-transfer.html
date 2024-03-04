@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt-Merchant-Transfer</title>
+    <style>
+        body {
+            background-color: #F2F3FD;
+        }
+        .receipt-container {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            margin-top: 15px;
+            width: 30vw;
+            border-radius: 15px;
+            background-color: #fff;
+        }
+        .receipt-logo {
+            display: block;
+            width: 20%;
+            margin-left: 40%;
+            margin-right: auto;
+            margin-bottom: 15px;
+        }
+        .receipt-success-img {
+            display: block;
+            width: 10%;
+            margin-left: 45%;
+            margin-right: auto;
+        }
+        .receipt-text-1 {
+            text-align: center;
+        }
+        .receipt-amount {
+            text-align: center;
+            padding: 20px 10px;
+            background-color: #F2F3FD;
+            font-size: 24px;
+            font-weight: 600;
+            color: #2C3ADF;
+        }
+        .receipt-details-title {
+            color: #000000;
+            font-weight: 600;
+            text-align: center;
+            font-size: 18px;
+        }
+        .receipt-paymentType-title {
+            color: #000000;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .receipt-payment-date {
+            display: inline-block;
+            color: #858585;
+            font-size: 14px;
+            margin-left: 35px;
+            margin-top: 2px;
+        }
+        .receipt-transfer-icon {
+            display: flex;
+            margin-bottom: 2px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .receipt-transfer-icon > span {
+            display: inline-block;
+            padding-top: 3px;
+            margin-left: 10px;
+        }
+        .receipt-info-container {
+            background-color: #F7F7F7;
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        .receipt-info {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #EBEBEB;
+        }
+        .download-btn {
+            background-color: #2C3ADF;
+            color: #fff;
+            font-weight: 600;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+        .download-btn-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .receipt-footer {
+            background-color: #F7F7F7;
+            padding: 20px 35px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #9497B8;
+        }
+        .receipt-item-second {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <img src="../assets/payzeep.png" alt="payzeep" class="receipt-logo">
+        <img src="../assets/group success.png" alt="payzeep" class="receipt-success-img">
+        <p class="receipt-text-1">Thomas Isiaka sent you money</p>
+        <p class="receipt-amount">N 100.38</p>
+        <p class="receipt-details-title">Transaction Details</p>
+        <p class="receipt-paymentType-title">Payment Type</p>
+        <p class="receipt-transfer-icon"><img src="../assets/fluent-emoji-flat_credit-card.png" alt="credit-card"><span>Transfer</span></p>
+        <p class="receipt-payment-date"><span>22/10/2023 </span><span>12:20</span></p>
+        <div>
+            <div class="receipt-info-container">
+                <div class="receipt-info">
+                    <p>Bank</p>
+                    <p class="receipt-item-second">Access Bank</p>
+                </div>
+                <div class="receipt-info">
+                    <p>Account</p>
+                    <p class="receipt-item-second">002XXXX123</p>
+                </div>
+                <div class="receipt-info">
+                    <p>Date</p>
+                    <p class="receipt-item-second">22nd October, 2023</p>
+                </div>
+                <div class="receipt-info">
+                    <p>Time</p>
+                    <p class="receipt-item-second">12:20</p>
+                </div>
+                <div class="receipt-info">
+                    <p>Reference</p>
+                    <p class="receipt-item-second">T35362342525252552</p>
+                </div>
+            </div>
+        </div>
+        <div class="download-btn-container">
+            <button class="download-btn">Download</button>
+        </div>
+        <footer class="receipt-footer">
+            If this email you received, is not as a result of 
+            your recent action on Zeepjet Dashboard, 
+            please contact PayZeep team urgently, Thanks.
+        </footer>
+    </div>
+</body>
+</html>
