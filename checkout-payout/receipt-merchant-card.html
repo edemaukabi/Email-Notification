@@ -13,7 +13,6 @@
             margin-right: auto;
             padding: 20px;
             margin-top: 15px;
-            width: 30vw;
             border-radius: 15px;
             background-color: #fff;
         }
@@ -107,6 +106,23 @@
         }
         .receipt-item-second {
             font-weight: 600;
+        }
+        @media screen and (min-width: 500px) and (max-width: 600px) {
+            .receipt-container {
+                width: 70vw;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 800px) {
+            .receipt-container {
+                width: 50vw;
+            }
+        }
+
+        @media screen and (min-width: 801px) {
+            .receipt-container {
+                width: 30vw;
+            }
         }
     </style>
 </head>
