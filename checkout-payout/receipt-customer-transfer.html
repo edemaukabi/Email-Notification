@@ -96,10 +96,10 @@
             border-radius: 15px;
             margin-bottom: 25px;
         }
+
         .download-btn-container {
             width: 100%;
-            display: flex;
-            justify-content: center;
+            text-align: center;
         }
         .receipt-footer {
             background-color: #F7F7F7;
@@ -122,6 +122,29 @@
         .receipt-item-second {
             font-weight: 600;
         }
+
+        .receipt-info-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .receipt-info-container table tr td {
+            padding: 8px 0;
+            border-bottom: 1px solid #EBEBEB;
+        }
+
+        .receipt-info-container table td:first-child {
+            width: 50%;
+        }
+
+        .receipt-item-second {
+            width: 50%;
+            font-weight: 600;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+
         @media screen and (min-width: 500px) and (max-width: 600px) {
             .receipt-container {
                 width: 70vw;
@@ -156,22 +179,24 @@
         <p class="receipt-payment-date"><span>22/10/2023 </span><span>12:20</span></p>
         <div>
             <div class="receipt-info-container">
-                <div class="receipt-info">
-                    <p>Payment To</p>
-                    <p class="receipt-item-second">Ayodeji Olusegun</p>
-                </div>
-                <div class="receipt-info">
-                    <p>Date</p>
-                    <p class="receipt-item-second">22nd October, 2023</p>
-                </div>
-                <div class="receipt-info">
-                    <p>Time</p>
-                    <p class="receipt-item-second">12:20</p>
-                </div>
-                <div class="receipt-info">
-                    <p>Reference</p>
-                    <p class="receipt-item-second">T35362342525252552</p>
-                </div>
+                <table>
+                    <tr>
+                        <td>Payment To</td>
+                        <td class="receipt-item-second">Ayodeji Olusegun</td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td class="receipt-item-second">22nd October, 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Time</td>
+                        <td class="receipt-item-second">12:20</td>
+                    </tr>
+                    <tr>
+                        <td>Reference</td>
+                        <td class="receipt-item-second">T35362342525252552</td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div class="download-btn-container">
