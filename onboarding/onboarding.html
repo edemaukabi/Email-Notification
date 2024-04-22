@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
         body {
             background-color: #F2F3FD;
         }
+
         .welcome-container {
             margin-left: auto;
             margin-right: auto;
@@ -18,6 +20,7 @@
             background-color: #fff;
             text-align: center;
         }
+
         .login-btn {
             background-color: #2C3ADF;
             color: #fff;
@@ -29,41 +32,67 @@
             border-radius: 20px;
             margin-bottom: 25px;
         }
+
         .login-btn:hover {
             background-color: #1a238b;
         }
+
+        .login-link {
+            background-color: #2C3ADF;
+            color: #fff;
+            font-weight: 600;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+
+        .login-link:hover {
+            background-color: #2735cb;
+        }
+
+
         .welcome-heading {
             font-size: 30px;
             font-weight: 500;
             margin-bottom: 25px;
         }
+
         .welcome-heading span {
             font-weight: 600;
             color: #2C3ADF;
         }
+
         .welcome-image {
             max-width: 200px;
             margin-bottom: 25px;
         }
+
         .welcome-salutation {
             margin-bottom: 25px;
         }
+
         .welcome-message {
             width: 80%;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 25px;
         }
+
         .welcome-footer {
             background-color: #F7F7F7;
             padding: 15px;
             margin-right: 10px;
             margin-left: 10px;
+
             @media screen and (min-width: 992px) {
                 margin-right: 35px;
-                margin-left: 35px; 
+                margin-left: 35px;
             }
         }
+
         @media screen and (min-width: 500px) and (max-width: 600px) {
             .welcome-container {
                 width: 70vw;
@@ -83,24 +112,27 @@
         }
     </style>
 </head>
+
 <body>
     <div class="welcome-container">
 
-    <h3 class="welcome-heading">Welcome to <br><span>Zeepway</span></h3>
-    <img src="https://res.cloudinary.com/dlujuf4gd/image/upload/v1712166346/kzb07mznlmnlsaw4hc5i.png" alt="welcome" class="welcome-image"/>
-    <p class="welcome-salutation">Dear <strong>firstName,</strong></p>
-    <p class="welcome-message">Welcome to ZeepWay! We are thrilled to have you on board 
-        and are excited to embark on a financial journey together.
-        Your financial well-being is our priority, and we're here to 
-        provide you with a range of services to help you achieve 
-        your financial goals.
-    </p>
-    <button class="login-btn">Login to Dashboard</button>
-    <footer class="welcome-footer">
-        If this email you received, 
-        is not as a result of your recent action on Zeepjet Dashboard, 
-        please contact PayZeep team urgently, Thanks.
-    </footer>
-</div>
+        <h3 class="welcome-heading">Welcome to <br><span>Zeepway</span></h3>
+        <img src="https://res.cloudinary.com/dlujuf4gd/image/upload/v1712166346/kzb07mznlmnlsaw4hc5i.png" alt="welcome"
+            class="welcome-image" />
+        <p class="welcome-salutation">Dear <strong>firstName,</strong></p>
+        <p class="welcome-message">Welcome to ZeepWay! We are thrilled to have you on board
+            and are excited to embark on a financial journey together.
+            Your financial well-being is our priority, and we're here to
+            provide you with a range of services to help you achieve
+            your financial goals.
+        </p>
+        <a href="https://google.com" target="_blank" class="login-link">Login to Dashboard</a>
+        <footer class="welcome-footer">
+            If this email you received,
+            is not as a result of your recent action on Zeepjet Dashboard,
+            please contact PayZeep team urgently, Thanks.
+        </footer>
+    </div>
 </body>
+
 </html>
