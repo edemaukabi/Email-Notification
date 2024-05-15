@@ -21,15 +21,17 @@
 
         .receipt-logo {
             display: block;
-            width: 20%;
+            width: 80px;
             margin-left: 40%;
             margin-right: auto;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
+            margin-top: 20px;
         }
 
         .receipt-success-img {
             display: block;
-            width: 10%;
+            width: 50px;
+            margin-top: -10px;
             margin-left: 45%;
             margin-right: auto;
         }
@@ -155,12 +157,22 @@
         .receipt-info-container table td:first-child {
             width: 50%;
         }
+        .receipt-info-container table td:nth-child(2) {
+            word-break: break-all;
+        }
 
         .receipt-item-second {
             width: 50%;
             font-weight: 600;
             text-align: right;
             padding-right: 10px;
+        }
+
+        .payzeep-logo {
+            margin-top: 10px;
+            margin-left: 20px;
+            width: 30px;
+            height: 30px;
         }
 
 
@@ -188,8 +200,9 @@
     <div class="receipt-container">
         <img src="https://res.cloudinary.com/dlujuf4gd/image/upload/v1712166345/qjzmjn7gk7yzpabhyug2.png" alt="payzeep" class="receipt-logo">
         <div class="receipt-hero">
+            <img src="https://res.cloudinary.com/dlujuf4gd/image/upload/v1715762405/ope0wzfnzewo6ki72q0t.png" alt="payzeep" class="payzeep-logo"/>
             <img src="https://res.cloudinary.com/dlujuf4gd/image/upload/v1712166345/z3zq0rp5fmy6sywnyxub.png" alt="payzeep" class="receipt-success-img">
-            <p class="receipt-text-1">Thomas Isiaka sent you money</p>
+            <p class="receipt-text-1">You just sent payment of </p>
             <p class="receipt-hero-amount">N 100.38</p>
             <p class="receipt-text-2">Transaction successful</p>
         </div>
@@ -205,6 +218,10 @@
                         <td class="receipt-item-second">Ayodeji Olusegun</td>
                     </tr>
                     <tr>
+                        <td>Merchant Name</td>
+                        <td class="receipt-item-second">Golden holdings</td>
+                    </tr>
+                    <tr>
                         <td>Date</td>
                         <td class="receipt-item-second">22nd October, 2023</td>
                     </tr>
@@ -214,7 +231,7 @@
                     </tr>
                     <tr>
                         <td>Reference</td>
-                        <td class="receipt-item-second">T35362342525252552</td>
+                        <td class="receipt-item-second">T35knldsfkjdshdfiuefklnvkjjgvjveffhfildfewiofewfiefi_8fjvoif362342525252552</td>
                     </tr>
                 </table>
             </div>
