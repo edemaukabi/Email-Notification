@@ -25,11 +25,6 @@
             margin-top: 10px;
         }
 
-        .otp-salutation {
-            display: flex;
-            justify-content: space-between;
-        }
-
         .otp-salutation span {
             font-weight: 600;
             font-size: 18px;
@@ -61,8 +56,7 @@
 
         .otp-btn-container {
             width: 100%;
-            display: flex;
-            justify-content: center;
+            text-align: center;
         }
 
         .otp-footer {
@@ -96,10 +90,18 @@
 
 <body>
     <div class="otp-container">
-        <div class="otp-salutation">
-            <p><span>Verify your account</span></p>
-            <img class="otp-img" src="https://res.cloudinary.com/dlujuf4gd/image/upload/v1712166345/toenhycgcqmwzfnwpvj5.png" alt="">
-        </div>
+        <table style="width: 100%;">
+            <tr class="otp-salutation">
+                <td style="text-align: left; width: 70%;">
+                    <p><span>Verify your account</span></p>
+                </td>
+                <td style="text-align: right; width: 30%;">
+                    <img class="otp-img"
+                        src="https://res.cloudinary.com/dlujuf4gd/image/upload/v1712166345/toenhycgcqmwzfnwpvj5.png"
+                        alt="">
+                </td>
+            </tr>
+        </table>
         <div class="otp-text otp-text-1">
             <p>Please use the One-Time confirmation code below to complete your payout account update.</p>
         </div>
