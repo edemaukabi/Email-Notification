@@ -158,6 +158,39 @@
             padding-right: 10px;
         }
 
+/* test mode        */
+.table-data {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table-data tr td {
+            padding: 8px 0;
+        }
+
+        .table-data td:first-child {
+            width: 50%;
+        }
+        .table-data td:nth-child(2) {
+            word-break: break-all;
+        }
+
+        .mode-dot {
+            background-color: #FF4040;
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        .mode {
+            font-weight: 600;
+            font-size: 14px;
+            color: #9497B8;
+        }
+/* end here */
+
 
         @media screen and (min-width: 500px) and (max-width: 600px) {
             .receipt-container {
@@ -189,7 +222,12 @@
             <p class="receipt-text-2">Transaction successful</p>
         </div>
         <p class="receipt-details-title">Transaction Details</p>
-        <p class="receipt-paymentType-title">Payment Type</p>
+        <table class="table-data">
+            <tr>
+                <td class="receipt-paymentType-title">Payment Type</td>
+                <td class="receipt-item-second mode"><span class="mode-dot"></span>Test Mode</td> <!-- add or remove this for test mode or live -->
+            </tr>
+        </table>
         <p class="receipt-transfer-icon"><img src="https://res.cloudinary.com/dlujuf4gd/image/upload/v1712166345/kg2ywwspycjukueg1ovw.png" alt="credit-card"><span>Transfer</span></p>
         <p class="receipt-payment-date"><span>22/10/2023 </span><span>12:20</span></p>
         <div>

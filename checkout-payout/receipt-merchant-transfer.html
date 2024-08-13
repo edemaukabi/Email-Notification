@@ -143,7 +143,40 @@
             padding-right: 10px;
         }
 
+        /* test mode        */
+        .table-data {
+            width: 100%;
+            border-collapse: collapse;
+        }
 
+        .table-data tr td {
+            padding: 8px 0;
+        }
+
+        .table-data td:first-child {
+            width: 50%;
+        }
+
+        .table-data td:nth-child(2) {
+            word-break: break-all;
+        }
+
+        .mode-dot {
+            background-color: #FF4040;
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        .mode {
+            font-weight: 600;
+            font-size: 14px;
+            color: #9497B8;
+        }
+
+        /* end here */
 
         @media screen and (min-width: 500px) and (max-width: 600px) {
             .receipt-container {
@@ -174,7 +207,12 @@
         <p class="receipt-text-1">Thomas Isiaka sent you money</p>
         <p class="receipt-amount">N 100.38</p>
         <p class="receipt-details-title">Transaction Details</p>
-        <p class="receipt-paymentType-title">Payment Type</p>
+        <table class="table-data">
+            <tr>
+                <td class="receipt-paymentType-title">Payment Type</td>
+                <td class="receipt-item-second mode"><span class="mode-dot"></span>Test Mode</td>
+            </tr>
+        </table>
         <p class="receipt-transfer-icon"><img
                 src="https://res.cloudinary.com/dlujuf4gd/image/upload/v1712166345/kg2ywwspycjukueg1ovw.png"
                 alt="credit-card"><span>Transfer</span></p>
@@ -200,7 +238,8 @@
                     </tr>
                     <tr>
                         <td>Reference</td>
-                        <td class="receipt-item-second">T3536kkkkkkkkkkkkkkko889o_nhjjjjjkkk_bbbbbbbbbb_2342525252552</td>
+                        <td class="receipt-item-second">T3536kkkkkkkkkkkkkkko889o_nhjjjjjkkk_bbbbbbbbbb_2342525252552
+                        </td>
                     </tr>
                 </table>
             </div>
